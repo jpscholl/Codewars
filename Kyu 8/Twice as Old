@@ -1,0 +1,25 @@
+/*
+//  Author: Jonathan Scholl
+//  Date: 12/15/2021
+//  Project: https://www.codewars.com/kata/5b853229cfde412a470000d0
+*/
+using System;
+
+namespace Twice_as_old
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine($"{TwiceAsOld(45, 30)}");
+        }
+        public static int TwiceAsOld(int dadYears, int sonYears)
+        {
+            // Add you code here.
+            int twiceYears = dadYears - sonYears * 2;
+
+            return twiceYears < 0 ? twiceYears * (-1) : twiceYears;
+
+        }
+    }
+}
