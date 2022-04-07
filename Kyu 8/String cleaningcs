@@ -1,0 +1,16 @@
+/*
+//  Author: Jonathan Scholl
+//  Date: 4/7/2022
+//  Project: Codewars - https://www.codewars.com/kata/57e1e61ba396b3727c000251
+//  
+*/
+
+using System.Text.RegularExpressions;
+
+Console.WriteLine("h3ll0 w0rld!");
+Console.WriteLine(StringClean("h3ll0 w0rld!"));
+
+static string StringClean(string s)
+{
+    return Regex.Replace(s, @"[\d-]", string.Empty);
+}
